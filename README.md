@@ -1,0 +1,2 @@
+# Ruby Instance Variable Immutability Bug
+This example demonstrates a common pitfall in Ruby: accidentally treating instance variables as immutable when a setter method isn't defined.  The code attempts to modify the `@value` instance variable directly after initialization, but fails because no setter method has been provided.  This can lead to difficult-to-debug issues if you expect the instance variable to be mutable.
